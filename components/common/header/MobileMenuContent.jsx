@@ -18,175 +18,52 @@ import { usePathname, useRouter } from "next/navigation";
 
 const home = [
   {
-    name: "Home 1",
+    id: 1,
+    name: "Home",
     routerPath: "/",
   },
+  { id: 2, name: "Buy", routerPath: "/" },
   {
-    name: "Home 2",
-    routerPath: "/home-2",
-  },
-  {
-    name: "Home 3",
-    routerPath: "/home-3",
-  },
-  {
-    name: "Home 4",
-    routerPath: "/home-4",
-  },
-  {
-    name: "Home 5",
-    routerPath: "/home-5",
-  },
-  {
-    name: "Home 6",
-    routerPath: "/home-6",
-  },
-  {
-    name: "Home 7",
-    routerPath: "/home-7",
-  },
-  {
-    name: "Home 8",
-    routerPath: "/home-8",
-  },
-  {
-    name: "Home 9",
-    routerPath: "/home-9",
-  },
-  {
-    name: "Home 10",
-    routerPath: "/home-10",
-  },
+    id: 3, name: "Sell", routerPath: "/",
+  }
 ];
 
 const listing = [
   {
     id: 1,
-    title: "Listing Grid",
-    items: [
-      {
-        name: "Grid v1",
-        routerPath: "/listing-grid-v1",
-      },
-      {
-        name: "Grid v2",
-        routerPath: "/listing-grid-v2",
-      },
-      {
-        name: "Grid v3",
-        routerPath: "/listing-grid-v3",
-      },
-      {
-        name: "Grid v4",
-        routerPath: "/listing-grid-v4",
-      },
-      {
-        name: "Grid v5",
-        routerPath: "/listing-grid-v5",
-      },
-      {
-        name: "Grid v6",
-        routerPath: "/listing-grid-v6",
-      },
-    ],
+    name: "For Sale🔥",
+    routerPath: "/listing-grid-v6"
   },
   {
     id: 2,
-    title: "Listing List",
-    items: [
-      {
-        name: "List V1",
-        routerPath: "/listing-list-v1",
-      },
-    ],
+    name: "Negotiable🤔",
+    routerPath: "/listing-grid-v6"
   },
   {
     id: 3,
-    title: "Listing Style",
-    items: [
-      {
-        name: "Parallax Style",
-        routerPath: "/parallax-style",
-      },
-      {
-        name: "Slider Style",
-        routerPath: "/slider-style",
-      },
-      {
-        name: "Map Header",
-        routerPath: "/map-header",
-      },
-    ],
+    name: "Inactive🔐",
+    routerPath: "/listing-grid-v6"
   },
   {
     id: 4,
-    title: "Listing Half",
-    items: [
-      {
-        name: "Map V1",
-        routerPath: "/listing-map-v1",
-      },
-      {
-        name: "Map V2",
-        routerPath: "/listing-map-v2",
-      },
-      {
-        name: "Map V3",
-        routerPath: "/listing-map-v3",
-      },
-      {
-        name: "Map V4",
-        routerPath: "/listing-map-v4",
-      },
-    ],
-  },
-  {
-    id: 5,
-    title: "Agent View",
-    items: [
-      {
-        name: "Agent V1",
-        routerPath: "/agent-v1",
-      },
-      {
-        name: "Agent V2",
-        routerPath: "/agent-v2",
-      },
-      {
-        name: "Agent Details",
-        routerPath: "/agent-details",
-      },
-    ],
-  },
-  {
-    id: 6,
-    title: "Agencies View",
-    items: [
-      {
-        name: "Agencies V1",
-        routerPath: "/agency-v1",
-      },
-      {
-        name: "Agencies V2",
-        routerPath: "/agency-v2",
-      },
-      {
-        name: "Agencies Details",
-        routerPath: "/agency-details",
-      },
-    ],
-  },
-  {
-    id: 7,
-    title: "Create Listing",
-    items: [
-      {
-        name: "Create Listing",
-        routerPath: "/create-listing",
-      },
-    ],
+    name: "Map📍",
+    routerPath: "/listing-map-v4"
   },
 ];
+
+const agency = [
+  {
+    id: 1,
+    name: "Agents",
+    routerPath: "/agent-v1"
+  },
+  {
+    id: 2,
+    name: "Agencies",
+    routerPath: "/agency-v2"
+  },
+];
+
 
 const property = [
   {
@@ -230,78 +107,25 @@ const property = [
         routerPath: "/create-listing",
       },
     ],
-  },
-  {
-    id: 2,
-    title: "Listing Single",
-    items: [
-      {
-        name: "Single V1",
-        routerPath: "/listing-details-v1",
-      },
-      {
-        name: "Single V2",
-        routerPath: "/listing-details-v2",
-      },
-      {
-        name: "Single V3",
-        routerPath: "/listing-details-v3",
-      },
-      {
-        name: "Single V4",
-        routerPath: "/listing-details-v4",
-      },
-    ],
-  },
+  }
 ];
 
 const blog = [
-  { id: 1, name: "Blog List 1", routerPath: "/blog-list-1" },
-  { id: 2, name: "Blog List 2", routerPath: "/blog-list-2" },
-  { id: 3, name: "Blog List 3", routerPath: "/blog-list-3" },
-  {
-    id: 4,
-    name: "Blog Details",
-    routerPath: "/blog-details",
-  },
+  { id: 1, name: "News", routerPath: "/blog-list-3" },
 ];
 
 const pages = [
-  {
-    name: "About Us",
-    routerPath: "/about-us",
-  },
-  {
-    name: "Gallery",
-    routerPath: "/gallery",
-  },
-  {
-    name: "Faq",
-    routerPath: "/faq",
-  },
-  {
-    name: "LogIn",
-    routerPath: "/login",
-  },
-  { name: "Compare", routerPath: "/compare" },
-  { name: "Membership", routerPath: "/membership" },
+  { id: 1, name: "About Us", routerPath: "/about-us" },
+  { id: 2, name: "Gallery", routerPath: "/gallery" },
+  { id: 3, name: "Faq", routerPath: "/faq" },
+  { id: 4, name: "LogIn", routerPath: "/login" },
+  { id: 5, name: "Compare", routerPath: "/compare" },
+  { id: 6, name: "Membership", routerPath: "/membership" },
 
-  {
-    name: "Register",
-    routerPath: "/register",
-  },
-  {
-    name: "Service",
-    routerPath: "/service",
-  },
-  {
-    name: "404 Page",
-    routerPath: "/404",
-  },
-  {
-    name: "Terms & Conditions",
-    routerPath: "/terms",
-  },
+  { id: 7, name: "Register", routerPath: "/register" },
+  { id: 8, name: "Service", routerPath: "/service" },
+  { id: 9, name: "404 Page", routerPath: "/404" },
+  { id: 10, name: "Terms & Conditions", routerPath: "/terms" },
 ];
 
 const MobileMenuContent = () => {
@@ -309,37 +133,37 @@ const MobileMenuContent = () => {
   const router = useRouter()
 
   return (
-<>
-        <div className="sidebar-header">
-          <Link href="/" className="sidebar-header-inner">
-            <Image
-              width={40}
-              height={45}
-              className="nav_logo_img img-fluid mt20"
-              src="/assets/images/header-logo2.png"
-              alt="header-logo.png"
-            />
-            <span className="brand-text">FindHouse</span>
-          </Link>
-          {/* End .logo */}
+    <>
+      <div className="sidebar-header">
+        <Link href="/" className="sidebar-header-inner">
+          <Image
+            width={40}
+            height={45}
+            className="nav_logo_img img-fluid mt20"
+            src="/assets/images/header-logo2.png"
+            alt="header-logo.png"
+          />
+          <span className="brand-text">HomeHarbor</span>
+        </Link>
+        {/* End .logo */}
 
-          <div
-            className="fix-icon"
-            data-bs-dismiss="offcanvas"
-            aria-label="Close"
-          >
-            <span className="flaticon-close"></span>
-          </div>
-          {/* Mobile Menu close icon */}
+        <div
+          className="fix-icon"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        >
+          <span className="flaticon-close"></span>
         </div>
+        {/* Mobile Menu close icon */}
+      </div>
 
-        {/* End logo */}
-    {/* <Sidebar> */}
-    <div style={{maxHeight:'calc(100vh - 100px)', overflowY:'auto'}}>
+      {/* End logo */}
+      {/* <Sidebar> */}
+      <div style={{ maxHeight: 'calc(100vh - 100px)', overflowY: 'auto' }}>
         <Menu>
           <SubMenu
             label="Home"
-           
+
             className={
               home.some((page) => page.routerPath?.split('/')[1] === pathname.split('/')[1])
                 ? "parent-menu-active"
@@ -349,8 +173,8 @@ const MobileMenuContent = () => {
             {home.map((val, i) => (
               <MenuItem key={i} active={true}>
                 <div
-                 
-                  onClick={()=>router.push(val.routerPath)}
+
+                  onClick={() => router.push(val.routerPath)}
                   className={
                     val.routerPath?.split('/')[1] === pathname.split('/')[1] ? "ui-active" : 'inactive-mobile-menu'
                   }
@@ -363,45 +187,55 @@ const MobileMenuContent = () => {
           {/* End Home Home */}
 
           <SubMenu
-            label="Listing"
+            label="Listings"
+
             className={
-              listing.some((parent) => {
-                return parent.items.some(
-                  (page) => page.routerPath?.split('/')[1] === pathname.split('/')[1]
-                );
-              })
+              listing.some((page) => page.routerPath?.split('/')[1] === pathname.split('/')[1])
                 ? "parent-menu-active"
                 : 'inactive-mobile-menu'
             }
           >
-            {listing.map((item) => (
-              <SubMenu
-              label={item.title}
-                className={
-                  item.items.some((page) => page.routerPath?.split('/')[1] === pathname.split('/')[1])
-                    ? "ui-active plus alt"
-                    : "plus alt inactive-mobile-menu"
-                }
-                key={item.id}
-              >
-                {item.items.map((val, i) => (
-                  <MenuItem key={i}>
-                    <div
-                     onClick={()=>router.push(val.routerPath)}
-                      className={
-                        pathname?.split('/')[1] === val.routerPath?.split('/')[1]
-                          ? "ui-active"
-                          : 'inactive-mobile-menu'
-                      }
-                    >
-                      {val.name}
-                    </div>
-                  </MenuItem>
-                ))}
-              </SubMenu>
+            {listing.map((val, i) => (
+              <MenuItem key={i} active={true}>
+                <div
+
+                  onClick={() => router.push(val.routerPath)}
+                  className={
+                    val.routerPath?.split('/')[1] === pathname.split('/')[1] ? "ui-active" : 'inactive-mobile-menu'
+                  }
+                >
+                  {val.name}
+                </div>
+              </MenuItem>
             ))}
           </SubMenu>
-          {/* End Pages Listing */}
+          {/* End Listings Menu */}
+
+          <SubMenu
+            label="Agent Search"
+
+            className={
+              agency.some((page) => page.routerPath?.split('/')[1] === pathname.split('/')[1])
+                ? "parent-menu-active"
+                : 'inactive-mobile-menu'
+            }
+          >
+            {agency.map((val, i) => (
+              <MenuItem key={i} active={true}>
+                <div
+
+                  onClick={() => router.push(val.routerPath)}
+                  className={
+                    val.routerPath?.split('/')[1] === pathname.split('/')[1] ? "ui-active" : 'inactive-mobile-menu'
+                  }
+                >
+                  {val.name}
+                </div>
+              </MenuItem>
+            ))}
+          </SubMenu>
+          {/* End Agent Search Menu */}
+
 
           <SubMenu
             label="Property"
@@ -419,7 +253,7 @@ const MobileMenuContent = () => {
           >
             {property.map((item) => (
               <SubMenu
-              label={item.title}
+                label={item.title}
                 className={
                   item.items.some(
                     (page) =>
@@ -434,10 +268,10 @@ const MobileMenuContent = () => {
                 {item.items.map((val, i) => (
                   <MenuItem key={i}>
                     <div
-                      onClick={()=>router.push(val.routerPath)}
+                      onClick={() => router.push(val.routerPath)}
                       className={
                         pathname.split('/')[1] === val.routerPath?.split('/')[1]
-                        // val.routerPath === pathname.split('/')[1]
+                          // val.routerPath === pathname.split('/')[1]
                           ? "ui-active"
                           : 'inactive-mobile-menu'
                       }
@@ -456,8 +290,8 @@ const MobileMenuContent = () => {
             className={
               blog.some(
                 (page) =>
-                  page.routerPath?.split('/')[1] === pathname.split('/')[1] 
-                  // page.routerPath?.split('/')[1] + "/[id]" === pathname.split('/')[1]
+                  page.routerPath?.split('/')[1] === pathname.split('/')[1]
+                // page.routerPath?.split('/')[1] + "/[id]" === pathname.split('/')[1]
               )
                 ? "parent-menu-active"
                 : 'inactive-mobile-menu'
@@ -466,10 +300,10 @@ const MobileMenuContent = () => {
             {blog.map((val, i) => (
               <MenuItem key={i}>
                 <div
-                  onClick={()=>router.push(val.routerPath)}
+                  onClick={() => router.push(val.routerPath)}
                   className={
-                    pathname?.split('/')[1] === val.routerPath?.split('/')[1] 
-                    // val.routerPath + "/[id]" === pathname.split('/')[1]
+                    pathname?.split('/')[1] === val.routerPath?.split('/')[1]
+                      // val.routerPath + "/[id]" === pathname.split('/')[1]
                       ? "ui-active"
                       : 'inactive-mobile-menu'
                   }
@@ -481,7 +315,7 @@ const MobileMenuContent = () => {
           </SubMenu>
           {/* End pages Blog */}
 
-          <SubMenu
+          {/* <SubMenu
             label="Pages"
             className={
               pages.some((page) => page.routerPath?.split('/')[1] === pathname.split('/')[1])
@@ -492,7 +326,7 @@ const MobileMenuContent = () => {
             {pages.map((val, i) => (
               <MenuItem key={i}>
                 <div
-                  onClick={()=>router.push(val.routerPath)}
+                  onClick={() => router.push(val.routerPath)}
                   className={
                     pathname?.split('/')[1] === val.routerPath?.split('/')[1] ? "ui-active" : 'inactive-mobile-menu'
                   }
@@ -501,13 +335,13 @@ const MobileMenuContent = () => {
                 </div>
               </MenuItem>
             ))}
-          </SubMenu>
+          </SubMenu> */}
           {/* End pages Pages */}
 
           <MenuItem>
             <div
-            onClick={()=>router.push("/contact")}
-             
+              onClick={() => router.push("/contact")}
+
               className={
                 pathname === "/contact" ? "ui-active" : 'inactive-mobile-menu'
               }
@@ -518,8 +352,8 @@ const MobileMenuContent = () => {
 
           <MenuItem>
             <div
-            onClick={()=>router.push("/login")}
-    
+              onClick={() => router.push("/login")}
+
               className={pathname === "/login" ? "ui-active" : 'inactive-mobile-menu'}
             >
               <span className="flaticon-user"></span> Login
@@ -528,8 +362,8 @@ const MobileMenuContent = () => {
 
           <MenuItem>
             <div
-            onClick={()=>router.push("/register")}
-        
+              onClick={() => router.push("/register")}
+
               className={
                 pathname === "/register" ? "ui-active" : 'inactive-mobile-menu'
               }
@@ -538,19 +372,19 @@ const MobileMenuContent = () => {
             </div>
           </MenuItem>
         </Menu>
-        </div>
+      </div>
       {/* </Sidebar> */}
 
-      
-        <Link
-          href="/create-listing"
-          className="btn btn-block btn-lg btn-thm circle"
-          style={{width:'90%',margin:'0px auto'}}
-        >
-          <span className="flaticon-plus"></span> Create Listing
-        </Link></>
-     
-   
+
+      <Link
+        href="/create-listing"
+        className="btn btn-block btn-lg btn-thm circle"
+        style={{ width: '90%', margin: '0px auto' }}
+      >
+        <span className="flaticon-plus"></span> Create Listing
+      </Link></>
+
+
   );
 };
 
