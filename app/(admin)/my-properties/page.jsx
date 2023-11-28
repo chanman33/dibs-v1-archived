@@ -2,9 +2,9 @@ import dynamic from "next/dynamic";
 import MyProperties from "@/components/dashboard/my-properties";
 
 export const metadata = {
-  title: 'My Properties || FindHouse - Real Estate React Template',
+  title: 'My Properties || HomeHarbor - Real Estate & Agent Marketplace',
   description:
-    'FindHouse - Real Estate React Template',
+    'HomeHarbor - Real Estate & Agent Marketplace',
 }
 
 const index = () => {

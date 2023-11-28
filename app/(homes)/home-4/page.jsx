@@ -2,7 +2,7 @@ import dynamic from "next/dynamic";
 import HomeMain from "@/components/home-4";
 
 export const metadata = {
-  title: 'HomeHarbor - Real Estate & Agent Marketplace',
+  title: 'Home | HomeHarbor - Real Estate & Agent Marketplace',
   description:
     'HomeHarbor - Real Estate & Agent Marketplace',
 }
