@@ -113,6 +113,7 @@ Tag: advanced custom search, agency, agent, business, clean, corporate, director
 /*== Shop Chaeckout Page Style ==*/
 /*== Shop Single Page Style ==*/
 /*== New Pricing Range Smooth Slider ==*/
+/* Apply Page Style */
 
 /*== Typography ==*/
 html {
@@ -19741,4 +19742,26 @@ button.gm-ui-hover-effect:focus {
 
 .pro-sidebar .pro-menu a.ui-active {
   color: var(--color-primary) !important;
+}
+
+/* Apply Page Style */
+
+.form-container {
+  display: flex;
+  justify-content: center;
+  position: relative; 
+}
+
+.form {
+  margin-top: -150px; /* Adjust this value based on actual layout */
+  z-index: 10; /* Ensure this is higher than the breadcrumb section */
+  width: 100%; /* Adjust width as needed */
+  max-width: 800px; /* Set a max-width for larger screens */
+}
+
+/*  Example media query for responsiveness */
+@media (max-width: 600px) {
+  .form {
+    margin-top: -50px; /*Smaller shift for smaller screens */
+  }
 }

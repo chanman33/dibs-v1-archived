@@ -377,8 +377,8 @@ const HeaderMenuContent = ({ float = "" }) => {
 
       <li className={`list-inline-item add_listing ${float}`}>
         <Link href="/create-listing">
-          <span className="flaticon-plus"></span>
-          <span className="dn-lg"> Create Listing</span>
+          {/* <span className="flaticon-plus"></span> */}
+          <span className="dn-lg">$ Get Paid To List</span>
         </Link>
       </li>
       {/* End .dropitem */}

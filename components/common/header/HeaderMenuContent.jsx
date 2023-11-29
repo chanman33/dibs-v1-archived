@@ -6,15 +6,64 @@ import { usePathname } from "next/navigation";
 const HeaderMenuContent = ({ float = "" }) => {
   const pathname = usePathname();
 
-  const home = [
+  const buy = [
     {
       id: 1,
-      name: "Home",
+      title: "Turn Your Agent Hunt into Cash",
       routerPath: "/",
     },
-    { id: 2, name: "Buy", routerPath: "/" },
+    { id: 2, title: "Best Buyer Partner Smart Match", routerPath: "/" },
     {
-      id: 3, name: "Sell", routerPath: "/",
+      id: 3, title: "Compare Agents", routerPath: "/",
+    },
+    {
+      id: 4, title: "Agent Search",
+      items: [
+        {
+          id: 1,
+          name: "Agents",
+          routerPath: "/agent-v1"
+        },
+        {
+          id: 2,
+          name: "Agencies",
+          routerPath: "/agency-v2"
+        },
+      ],
+    },
+    {
+      id: 5, title: "Browse Listings", routerPath: "/listing-grid-v6"
+    }
+  ];
+
+  const sell = [
+    {
+      id: 1,
+      title: "Get Paid To Find Your Future Realtor",
+      routerPath: "/apply",
+    },
+    { id: 2, title: "Seamless Seller Agent Matching", routerPath: "/apply" },
+    { id: 3, title: "Not Selling Soon? Get Paid Anyway!", routerPath: "/apply" },
+    {
+      id: 4, title: "Compare Agents", routerPath: "/agent-v1",
+    },
+    {
+      id: 5, title: "Agent Search",
+      items: [
+        {
+          id: 1,
+          name: "Agents",
+          routerPath: "/agent-v1"
+        },
+        {
+          id: 2,
+          name: "Agencies",
+          routerPath: "/agency-v2"
+        },
+      ],
+    },
+    {
+      id: 6, title: "Get Listed", routerPath: "/create-listing"
     }
   ];
 
@@ -41,18 +90,6 @@ const HeaderMenuContent = ({ float = "" }) => {
     },
   ];
 
-  const agency = [
-    {
-      id: 1,
-      name: "Agents",
-      routerPath: "/agent-v1"
-    },
-    {
-      id: 2,
-      name: "Agencies",
-      routerPath: "/agency-v2"
-    },
-  ];
 
 
   const property = [
@@ -124,36 +161,96 @@ const HeaderMenuContent = ({ float = "" }) => {
       className="ace-responsive-menu text-end d-lg-block d-none"
       data-menu-style="horizontal"
     >
-      <li className="dropitem">
-        <a
-          href="#"
-          className={
-            home.some((page) => page.routerPath?.split('/')[1] === pathname?.split('/')[1])
-              ? "ui-active"
-              : undefined
-          }
-        >
-          <span className="title">Home</span>
-          <span className="arrow"></span>
-        </a>
-        {/* <!-- Level Two--> */}
 
-        <ul className="sub-menu ">
-          {home.map((item) => (
-            <li key={item.id}>
-              <Link
-                href={item.routerPath}
-                className={
-                  pathname?.split('/')[1] === item.routerPath?.split('/')[1] ? "ui-active" : undefined
-                }
-              >
-                {item.name}
-              </Link>
+      <li className="dropitem">
+        <a href="#" > {/* className={buy.some(parent => Array.isArray(parent.items)) ? "ui-active" : undefined} */}
+          <span className="title">Buy</span>
+          {buy.some(parent => Array.isArray(parent.items)) && <span className="arrow"></span>}
+        </a>
+        <ul className="sub-menu">
+          {buy.map((item) => (
+            <li className="dropitem" key={item.id}>
+              {Array.isArray(item.items) ? (
+                // Parent item with submenu
+                <>
+                  <a href="#" className="dropitem">
+                    {item.title}
+                    {/* Add arrow next to the parent item */}
+                    <span className="arrow"></span>
+                  </a>
+                  <ul className="sub-menu">
+                    {item.items.map((val) => (
+                      <li key={val.id || val.name} >
+                        <Link
+                          href={val.routerPath}
+                          className={pathname?.split('/')[1] === val.routerPath?.split('/')[1] ? "ui-active" : undefined}
+                        >
+                          {val.name}
+                        </Link>
+                      </li>
+                    ))}
+                  </ul>
+                </>
+              ) : (
+                // Leaf item without submenu
+                <a
+                  href={item.routerPath}
+                  className={pathname?.split('/')[1] === item.routerPath?.split('/')[1] ? "ui-active" : undefined}
+                >
+                  {item.title}
+                </a>
+              )}
             </li>
           ))}
         </ul>
       </li>
       {/* End .dropitem */}
+
+
+      <li className="dropitem">
+         <a href="#" > {/*className={sell.some(parent => Array.isArray(parent.items)) ? "ui-active" : undefined} */}
+          <span className="title">Sell</span>
+          {sell.some(parent => Array.isArray(parent.items)) && <span className="arrow"></span>}
+        </a>
+        <ul className="sub-menu">
+          {sell.map((item) => (
+            <li className="dropitem" key={item.id}>
+              {Array.isArray(item.items) ? (
+                // Parent item with submenu
+                <>
+                  <a href="#" className="dropitem">
+                    {item.title}
+                    {/* Add arrow next to the parent item */}
+                    <span className="arrow"></span>
+                  </a>
+                  <ul className="sub-menu">
+                    {item.items.map((val) => (
+                      <li key={val.id || val.name}>
+                        <Link
+                          href={val.routerPath}
+                          className={pathname?.split('/')[1] === val.routerPath?.split('/')[1] ? "ui-active" : undefined}
+                        >
+                          {val.name}
+                        </Link>
+                      </li>
+                    ))}
+                  </ul>
+                </>
+              ) : (
+                // Leaf item without submenu
+                <a
+                  href={item.routerPath}
+                  className={pathname?.split('/')[1] === item.routerPath?.split('/')[1] ? "ui-active" : undefined}
+                >
+                  {item.title}
+                </a>
+              )}
+            </li>
+          ))}
+        </ul>
+      </li>
+      {/* End .dropitem */}
+
 
       <li className="dropitem">
         <a
@@ -186,36 +283,7 @@ const HeaderMenuContent = ({ float = "" }) => {
       </li>
       {/* End .dropitem */}
 
-      <li className="dropitem">
-        <a
-          href="#"
-          className={
-            agency.some((page) => page.routerPath?.split('/')[1] === pathname?.split('/')[1])
-              ? "ui-active"
-              : undefined
-          }
-        >
-          <span className="title">Agent Search</span>
-          <span className="arrow"></span>
-        </a>
-        {/* <!-- Level Two--> */}
 
-        <ul className="sub-menu ">
-          {agency.map((item) => (
-            <li key={item.id}>
-              <Link
-                href={item.routerPath}
-                className={
-                  pathname?.split('/')[1] === item.routerPath?.split('/')[1] ? "ui-active" : undefined
-                }
-              >
-                {item.name}
-              </Link>
-            </li>
-          ))}
-        </ul>
-      </li>
-      {/* End .dropitem */}
 
       <li className="dropitem">
         <a
@@ -364,9 +432,9 @@ const HeaderMenuContent = ({ float = "" }) => {
       {/* End .dropitem */}
 
       <li className={`list-inline-item add_listing ${float}`}>
-        <Link href="/create-listing">
-          <span className="flaticon-plus"></span>
-          <span className="dn-lg"> Create Listing</span>
+        <Link href="/apply">
+          {/* <span className="flaticon-plus"></span> */}
+          <span className="dn-lg">$ Get Paid To List</span>
         </Link>
       </li>
       {/* End .dropitem */}
