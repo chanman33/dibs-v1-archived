@@ -41,10 +41,10 @@ const index = () => {
           <div className="form-container row">
             <div className="form col-lg-7 col-xl-8">
               <div className="form_grid">
-                <h3 className="form-container mb5">Sign Up and Earn</h3>
+                <h3 className="form-container mb5">Apply and Get Cash</h3>
                 <p>
                   Choosing the right partner to navigate the complexities of the real estate market is crucial - but finding one is tedious and time consuming.
-                  Get smart matched with the best and trusted brokers and agents!
+                  Get help finding the best and trusted brokers and agents!
                   <br />
                   <i>The best part?</i>
                   <br />

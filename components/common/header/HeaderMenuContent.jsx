@@ -6,18 +6,9 @@ import { usePathname } from "next/navigation";
 const HeaderMenuContent = ({ float = "" }) => {
   const pathname = usePathname();
 
-  const buy = [
+  const agent = [
     {
-      id: 1,
-      title: "Turn Your Agent Hunt into Cash",
-      routerPath: "/",
-    },
-    { id: 2, title: "Best Buyer Partner Smart Match", routerPath: "/" },
-    {
-      id: 3, title: "Compare Agents", routerPath: "/",
-    },
-    {
-      id: 4, title: "Agent Search",
+      id: 1, title: "Agent Search",
       items: [
         {
           id: 1,
@@ -30,9 +21,12 @@ const HeaderMenuContent = ({ float = "" }) => {
           routerPath: "/agency-v2"
         },
       ],
-    },
+    }
+  ];
+
+  const buy = [
     {
-      id: 5, title: "Browse Listings", routerPath: "/listing-grid-v6"
+      id: 1, title: "Browse Listings", routerPath: "/listing-grid-v6"
     }
   ];
 
@@ -42,13 +36,11 @@ const HeaderMenuContent = ({ float = "" }) => {
       title: "Get Paid To Find Your Future Realtor",
       routerPath: "/apply",
     },
-    { id: 2, title: "Seamless Seller Agent Matching", routerPath: "/apply" },
-    { id: 3, title: "Not Selling Soon? Get Paid Anyway!", routerPath: "/apply" },
     {
-      id: 4, title: "Compare Agents", routerPath: "/agent-v1",
+      id: 2, title: "Compare Agents", routerPath: "/agent-v1",
     },
     {
-      id: 5, title: "Agent Search",
+      id: 3, title: "Search Agents",
       items: [
         {
           id: 1,
@@ -61,10 +53,7 @@ const HeaderMenuContent = ({ float = "" }) => {
           routerPath: "/agency-v2"
         },
       ],
-    },
-    {
-      id: 6, title: "Get Listed", routerPath: "/create-listing"
-    }
+    } 
   ];
 
   const listing = [
@@ -75,19 +64,9 @@ const HeaderMenuContent = ({ float = "" }) => {
     },
     {
       id: 2,
-      name: "Negotiable🤔",
-      routerPath: "/listing-grid-v6"
-    },
-    {
-      id: 3,
-      name: "Inactive🔐",
-      routerPath: "/listing-grid-v6"
-    },
-    {
-      id: 4,
       name: "Map📍",
       routerPath: "/listing-map-v4"
-    },
+    }
   ];
 
 
@@ -252,7 +231,7 @@ const HeaderMenuContent = ({ float = "" }) => {
       {/* End .dropitem */}
 
 
-      <li className="dropitem">
+      {/* <li className="dropitem">
         <a
           href="#"
           className={
@@ -263,10 +242,10 @@ const HeaderMenuContent = ({ float = "" }) => {
         >
           <span className="title">Listings</span>
           <span className="arrow"></span>
-        </a>
+        </a> */}
         {/* <!-- Level Two--> */}
 
-        <ul className="sub-menu ">
+        {/* <ul className="sub-menu ">
           {listing.map((item) => (
             <li key={item.id}>
               <Link
@@ -280,7 +259,7 @@ const HeaderMenuContent = ({ float = "" }) => {
             </li>
           ))}
         </ul>
-      </li>
+      </li> */}
       {/* End .dropitem */}
 
 
@@ -300,7 +279,7 @@ const HeaderMenuContent = ({ float = "" }) => {
               : undefined
           }
         >
-          <span className="title">Property</span>{" "}
+          <span className="title">Dashboard</span>{" "}
           <span className="arrow"></span>
         </a>
         <ul className="sub-menu ">
