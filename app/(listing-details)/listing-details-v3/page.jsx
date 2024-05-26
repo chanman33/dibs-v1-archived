@@ -2,9 +2,9 @@ import dynamic from "next/dynamic";
 import ListingDetailsV3 from "@/components/listing-details-v3";
 
 export const metadata = {
-  title: 'Listing Single – Details V3 || HomeHarbor - Real Estate & Agent Marketplace',
+  title: 'Listing Single – Details V3 || Dibs - Real Estate & Agent Marketplace',
   description:
-    'HomeHarbor - Real Estate & Agent Marketplace',
+    'Dibs - Real Estate & Agent Marketplace',
 }
 
 const index = () => {

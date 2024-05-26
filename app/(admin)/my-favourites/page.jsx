@@ -2,9 +2,9 @@ import dynamic from "next/dynamic";
 import MyFavourites from "@/components/dashboard/my-favourites";
 
 export const metadata = {
-  title: 'My Favourites || HomeHarbor - Real Estate & Agent Marketplace',
+  title: 'My Favourites || Dibs - Real Estate & Agent Marketplace',
   description:
-    'HomeHarbor - Real Estate & Agent Marketplace',
+    'Dibs - Real Estate & Agent Marketplace',
 }
 
 

@@ -2,9 +2,9 @@ import dynamic from "next/dynamic";
 import MySavedSearch from "@/components/dashboard/my-saved-search";
 
 export const metadata = {
-  title: 'My Saved Search || HomeHarbor - Real Estate & Agent Marketplace',
+  title: 'My Saved Search || Dibs - Real Estate & Agent Marketplace',
   description:
-    'HomeHarbor - Real Estate & Agent Marketplace',
+    'Dibs - Real Estate & Agent Marketplace',
 }
 
 const index = () => {

@@ -30,7 +30,7 @@ const CopyrightFooter = () => {
           <p>
             &copy; {new Date().getFullYear()} by{" "}
 
-            HomeHarbor. 
+            Dibs. 
 
              All rights reserved.
           </p>

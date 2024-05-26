@@ -5,9 +5,9 @@ import dynamic from "next/dynamic";
 import NotFound from "@/components/404";
 
 export const metadata = {
-  title: '404 Not Found || HomeHarbor - Real Estate & Agent Marketplace',
+  title: '404 Not Found || Dibs - Real Estate & Agent Marketplace',
   description:
-    'HomeHarbor - Real Estate & Agent Marketplace',
+    'Dibs - Real Estate & Agent Marketplace',
 }
 
 const index = () => {

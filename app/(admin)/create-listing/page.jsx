@@ -2,9 +2,9 @@ import dynamic from "next/dynamic";
 import CreateListing from "@/components/dashboard/create-listing";
 
 export const metadata = {
-  title: 'Create Listing || HomeHarbor - Real Estate & Agent Marketplace',
+  title: 'Create Listing || Dibs - Real Estate & Agent Marketplace',
   description:
-    'HomeHarbor - Real Estate & Agent Marketplace',
+    'Dibs - Real Estate & Agent Marketplace',
 }
 
 const index = () => {

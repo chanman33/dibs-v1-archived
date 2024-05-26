@@ -2,9 +2,9 @@ import dynamic from "next/dynamic";
 import Apply from "@/components/apply"
 
 export const metadata = {
-  title: 'Apply || HomeHarbor - Real Estate & Agent Marketplace',
+  title: 'Apply || Dibs - Real Estate & Agent Marketplace',
   description:
-    'HomeHarbor - Real Estate & Agent Marketplace',
+    'Dibs - Real Estate & Agent Marketplace',
 }
 
 const index = () => {

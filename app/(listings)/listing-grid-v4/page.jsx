@@ -2,9 +2,9 @@ import dynamic from "next/dynamic";
 import GridV4 from "@/components/listing-grid/grid-v4";
 
 export const metadata = {
-  title: 'Simple Listing – Grid V4 || HomeHarbor - Real Estate & Agent Marketplace',
+  title: 'Simple Listing – Grid V4 || Dibs - Real Estate & Agent Marketplace',
   description:
-    'HomeHarbor - Real Estate & Agent Marketplace',
+    'Dibs - Real Estate & Agent Marketplace',
 }
 
 const index = () => {

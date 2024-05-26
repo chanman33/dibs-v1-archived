@@ -4077,7 +4077,7 @@ form.home5_advanced_search_form .form-group input.form-control::-ms-input-placeh
 }
 
 .home3_home_content .popup_video_btn {
-  background: rgb(255, 90, 95);
+  background: rgba(48, 97, 145);
   border-radius: 50%;
   color: #ffffff;
   font-size: 30px;
@@ -4126,7 +4126,7 @@ form.home5_advanced_search_form .form-group input.form-control::-ms-input-placeh
 }
 
 .home-four .banner-style-one .slide:before {
-  background-image: linear-gradient(to right, rgba(62, 62, 165) 0%, rgba(255, 90, 95) 100%);
+  background-image: linear-gradient(to right, rgba(48, 97, 145, 1) 0%, rgba(41, 161, 156, 1) 100%);
   left: 0;
   opacity: 0.902;
   position: absolute;
@@ -5466,7 +5466,7 @@ form.home5_advanced_search_form .form-group input.form-control::-ms-input-placeh
 
 .status_tag.badge {
   border-radius: 3px;
-  background-color: rgb(255, 90, 95);
+  background-color: rgba(48, 97, 145);
   font-size: 14px;
   font-family: "Nunito";
   color: rgb(254, 254, 254);
@@ -6506,7 +6506,7 @@ form.home5_advanced_search_form .form-group input.form-control::-ms-input-placeh
 }
 
 .property_video .thumb .overlay_icon .video_popup_btn {
-  background-color: rgb(255, 90, 95);
+  background-color: rgba(48, 97, 145);
   border-radius: 50%;
   color: #ffffff;
   font-size: 22px;
@@ -7727,7 +7727,7 @@ form.home5_advanced_search_form .form-group input.form-control::-ms-input-placeh
 
 .my_profile_setting_input .btn1 {
   background-color: rgba(255, 90, 95, 0);
-  border: 2px solid rgb(255, 90, 95);
+  border: 2px solid rgba(48, 97, 145);
   border-radius: 8px;
   -webkit-box-shadow: 0px 1px 4px 0px rgba(255, 90, 95, 0.3);
   -moz-box-shadow: 0px 1px 4px 0px rgba(255, 90, 95, 0.3);
@@ -7735,7 +7735,7 @@ form.home5_advanced_search_form .form-group input.form-control::-ms-input-placeh
   box-shadow: 0px 1px 4px 0px rgba(255, 90, 95, 0.3);
   font-size: 16px;
   font-family: "Nunito";
-  color: rgb(255, 90, 95);
+  color: rgba(48, 97, 145);
   font-weight: bold;
   line-height: 1.2;
   height: 50px;
@@ -7744,13 +7744,13 @@ form.home5_advanced_search_form .form-group input.form-control::-ms-input-placeh
 }
 
 .my_profile_setting_input .btn1:hover {
-  background-color: rgb(255, 90, 95);
+  background-color: rgba(48, 97, 145);
   color: #ffffff;
 }
 
 .my_profile_setting_input .btn2 {
-  background-color: rgb(255, 90, 95);
-  border: 2px solid rgb(255, 90, 95);
+  background-color: rgba(48, 97, 145);
+  border: 2px solid rgba(48, 97, 145);
   border-radius: 8px;
   -webkit-box-shadow: 0px 1px 4px 0px rgba(255, 90, 95, 0.3);
   -moz-box-shadow: 0px 1px 4px 0px rgba(255, 90, 95, 0.3);
@@ -7766,9 +7766,9 @@ form.home5_advanced_search_form .form-group input.form-control::-ms-input-placeh
 }
 
 .my_profile_setting_input .btn2:hover {
-  color: rgb(255, 90, 95);
+  color: rgba(48, 97, 145);
   background-color: #ffffff;
-  border: 2px solid rgb(255, 90, 95);
+  border: 2px solid rgba(48, 97, 145);
 }
 
 .my_profile_setting_input .btn3 {
@@ -9268,10 +9268,10 @@ ul.ab_counting li:last-child {
 }
 
 .team_member.home4:hover .thumb .overylay {
-  background-image: -moz-linear-gradient(-36deg, rgb(62, 62, 165) 0%, rgb(255, 90, 95) 100%);
-  background-image: -webkit-linear-gradient(-36deg, rgb(62, 62, 165) 0%, rgb(255, 90, 95) 100%);
-  background-image: -ms-linear-gradient(-36deg, rgb(62, 62, 165) 0%, rgb(255, 90, 95) 100%);
-  background-image: linear-gradient(-36deg, rgb(62, 62, 165) 0%, rgb(255, 90, 95) 100%);
+  background-image: -moz-linear-gradient(-36deg, rgb(62, 62, 165) 0%, rgba(48, 97, 145) 100%);
+  background-image: -webkit-linear-gradient(-36deg, rgb(62, 62, 165) 0%, rgba(48, 97, 145) 100%);
+  background-image: -ms-linear-gradient(-36deg, rgb(62, 62, 165) 0%, rgba(48, 97, 145) 100%);
+  background-image: linear-gradient(-36deg, rgb(62, 62, 165) 0%, rgba(48, 97, 145) 100%);
   opacity: 0.902;
 }
 
@@ -12060,14 +12060,14 @@ legend span {
 
 .sidebar_recent_product .media .media-body .post_title a:hover,
 .sidebar_feature_listing .media .media-body .post_title a:hover {
-  color: rgb(255, 90, 95);
+  color: rgba(48, 97, 145);
 }
 
 .sidebar_recent_product .media .media-body a,
 .sidebar_feature_listing .media .media-body a {
   font-size: 16px;
   font-family: "Nunito";
-  color: rgb(255, 90, 95);
+  color: rgba(48, 97, 145);
   font-weight: bold;
   line-height: 1.2;
 }
@@ -12688,7 +12688,7 @@ legend span {
 .mbp_pagination_comments a.write_review {
   font-size: 14px;
   font-family: "Nunito";
-  color: rgb(255, 90, 95);
+  color: rgba(48, 97, 145);
   position: absolute;
   right: 30px;
 }
@@ -12958,7 +12958,7 @@ legend span {
 
 .pck_chng_btn .btn {
   border-radius: 8px;
-  background-color: rgb(255, 90, 95);
+  background-color: rgba(48, 97, 145);
   -webkit-box-shadow: 0px 1px 4px 0px rgba(255, 90, 95, 0.3);
   -moz-box-shadow: 0px 1px 4px 0px rgba(255, 90, 95, 0.3);
   -o-box-shadow: 0px 1px 4px 0px rgba(255, 90, 95, 0.3);
@@ -14343,20 +14343,20 @@ legend span {
 .ff_one .detais p {
   font-size: 16px;
   font-family: "Nunito";
-  color: rgb(119, 119, 119);
+  color: rgb(48, 97, 145,);
   margin-bottom: 0;
 }
 
 .ff_one.style2 .icon {
-  background-color: rgba(148, 153, 218, 0.149);
+  background-color: rgba(48, 97, 145, 0.149);
 }
 
 .ff_one.style3 .icon {
-  background-color: rgba(255, 90, 95, 0.149);
+  background-color: rgba(48, 97, 145, 0.149);
 }
 
 .ff_one.style4 .icon {
-  background-color: rgba(255, 188, 125, 0.149);
+  background-color: rgba(48, 97, 145, 0.149);
 }
 
 .application_statics {
@@ -14404,7 +14404,7 @@ legend span {
 
 .recent_job_activity .grid ul li:first-child {
   border-radius: 50%;
-  background-color: rgb(255, 232, 233);
+  background-color: rgba(173, 198, 227, .5);
   height: 45px;
   line-height: 45px;
   margin-right: 15px;
@@ -14874,7 +14874,7 @@ legend span {
 
 .portfolio_item .edu_stats_list {
   border-radius: 8px;
-  background-color: rgb(255, 90, 95);
+  background-color: rgba(48, 97, 145);
   cursor: pointer;
   height: 35px;
   line-height: 35px;
@@ -18008,7 +18008,7 @@ canvas {
 
 /*== Tags Bar Css ==*/
 .selected_filter_widget {
-  border: 1px solid rgb(237, 239, 247);
+  border: 1px solid rgb(48, 97, 145,);
   display: inline-block;
   height: auto;
   margin-bottom: 30px;

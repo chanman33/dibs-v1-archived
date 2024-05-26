@@ -2,9 +2,9 @@ import dynamic from "next/dynamic";
 import AgencyV2 from "@/components/agency-view/agency-v2";
 
 export const metadata = {
-  title: 'Simple Listing – AgencyV2 || HomeHarbor - Real Estate & Agent Marketplace',
+  title: 'Simple Listing – AgencyV2 || Dibs - Real Estate & Agent Marketplace',
   description:
-    'HomeHarbor - Real Estate & Agent Marketplace',
+    'Dibs - Real Estate & Agent Marketplace',
 }
 
 const index = () => {

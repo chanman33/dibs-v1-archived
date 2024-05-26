@@ -26,8 +26,8 @@ const MyAccount = () => {
           alt="e1.png"
         />
         <p>
-          Ali Tufan <br />
-          <span className="address">alitufan@gmail.com</span>
+          Agent <br />
+          <span className="address">agent@broker.com</span>
         </p>
       </div>
       {/* End user_set_header */}

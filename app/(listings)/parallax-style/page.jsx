@@ -2,9 +2,9 @@ import dynamic from "next/dynamic";
 import ParallaxStyle from "@/components/listing-style/parallax-style";
 
 export const metadata = {
-  title: 'Listing - Parallax Style || HomeHarbor - Real Estate & Agent Marketplace',
+  title: 'Listing - Parallax Style || Dibs - Real Estate & Agent Marketplace',
   description:
-    'HomeHarbor - Real Estate & Agent Marketplace',
+    'Dibs - Real Estate & Agent Marketplace',
 }
 
 const index = () => {

@@ -2,9 +2,9 @@ import dynamic from "next/dynamic";
 import Gallery from "@/components/gallery";
 
 export const metadata = {
-  title: 'Gallery || HomeHarbor - Real Estate & Agent Marketplace',
+  title: 'Gallery || Dibs - Real Estate & Agent Marketplace',
   description:
-    'HomeHarbor - Real Estate & Agent Marketplace',
+    'Dibs - Real Estate & Agent Marketplace',
 }
 
 const index = () => {

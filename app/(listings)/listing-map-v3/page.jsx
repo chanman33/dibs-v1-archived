@@ -2,9 +2,9 @@ import dynamic from "next/dynamic";
 import ListingMapV3 from "@/components/listing-half-map/listing-map-v3";
 
 export const metadata = {
-  title: 'Listing - Map V3 || HomeHarbor - Real Estate & Agent Marketplace',
+  title: 'Listing - Map V3 || Dibs - Real Estate & Agent Marketplace',
   description:
-    'HomeHarbor - Real Estate & Agent Marketplace',
+    'Dibs - Real Estate & Agent Marketplace',
 }
 
 const index = () => {

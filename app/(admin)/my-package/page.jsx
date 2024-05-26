@@ -2,9 +2,9 @@ import dynamic from "next/dynamic";
 import MyPackage from "@/components/dashboard/my-package";
 
 export const metadata = {
-  title: 'My Package || HomeHarbor - Real Estate & Agent Marketplace',
+  title: 'My Package || Dibs - Real Estate & Agent Marketplace',
   description:
-    'HomeHarbor - Real Estate & Agent Marketplace',
+    'Dibs - Real Estate & Agent Marketplace',
 }
 
 const index = () => {

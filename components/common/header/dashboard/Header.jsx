@@ -30,20 +30,19 @@ const Header = () => {
         {/* <!-- Menu Toggle btn--> */}
         <Link href="/" className="navbar_brand float-start dn-smd">
           <Image
-            width={40}
-            height={45}
+            width={112.5}
+            height={61.5}
             className="logo1 img-fluid"
             src="/assets/images/header-logo2.png"
             alt="header-logo2.png"
           />
           <Image
-            width={40}
-            height={45}
+            width={112.5}
+            height={61.5}
             className="logo2 img-fluid"
             src="/assets/images/header-logo2.png"
             alt="header-logo2.png"
           />
-          <span>HomeHarbor</span>
         </Link>
         {/* site logo brand */}
 

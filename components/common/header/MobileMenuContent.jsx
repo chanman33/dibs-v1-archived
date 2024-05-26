@@ -143,7 +143,7 @@ const MobileMenuContent = () => {
             src="/assets/images/header-logo2.png"
             alt="header-logo.png"
           />
-          <span className="brand-text">HomeHarbor</span>
+          <span className="brand-text">Dibs</span>
         </Link>
         {/* End .logo */}
 
