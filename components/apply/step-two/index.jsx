@@ -22,7 +22,8 @@ const index = () => {
             <div className="col-xl-6">
               <div className="breadcrumb_content">
                 {/* <BreadCrumb title="about us" /> */}
-                <h4 className="breadcrumb_title">Tell Us More About Your Property</h4>
+                <h4 className="breadcrumb_title">Thank you for applying</h4>
+                <h4 className="breadcrumb_title">We'll be in touch shortly!</h4>
               </div>
             </div>
             {/* End .col */}
@@ -30,7 +31,7 @@ const index = () => {
         </div>
       </section>
 
-      <section className="pb0 bgc-f7">
+      {/* <section className="pb0 bgc-f7">
         <div className="container">
           <div className="form-container row">
             <div className="col-lg-7 col-xl-8">
@@ -44,7 +45,7 @@ const index = () => {
           </div>
         </div>
         </div>
-      </section>
+      </section> */}
 
 
       {/* <!-- Our Footer --> */}

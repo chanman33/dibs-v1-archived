@@ -1,23 +1,39 @@
 "use client";
 
+import { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { updateForm, submitFormAsync } from '../../features/form/formSlice';
-import { useState } from 'react';
+import { useRouter } from 'next/navigation';
 
 const Form = () => {
   const dispatch = useDispatch();
+  const router = useRouter();
   const formData = useSelector((state) => state.form.formData);
   const formStatus = useSelector((state) => state.form.status);
   const formError = useSelector((state) => state.form.error);
+
+  useEffect(() => {
+    console.log('Router:', router);
+
+    if (!router) return;
+
+    console.log('Router is ready');
+  }, [router]);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
     dispatch(updateForm({ [name]: value }));
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    dispatch(submitFormAsync(formData));
+    const result = await dispatch(submitFormAsync(formData));
+
+    if (result.meta.requestStatus === 'fulfilled') {
+      router.push('/apply2');
+    } else {
+      console.error('Form submission failed');
+    }
   };
 
   return (
@@ -38,7 +54,6 @@ const Form = () => {
           </div>
         </div>
         {/* End .col */}
-
         <div className="col-md-6">
           <div className="form-group">
             <input
@@ -54,7 +69,6 @@ const Form = () => {
           </div>
         </div>
         {/* End .col */}
-
         <div className="col-md-6">
           <div className="form-group">
             <input
@@ -70,7 +84,6 @@ const Form = () => {
           </div>
         </div>
         {/* End .col */}
-
         <div className="col-md-6">
           <div className="form-group">
             <input
@@ -86,7 +99,6 @@ const Form = () => {
           </div>
         </div>
         {/* End .col */}
-
         <div className="col-12">
           <div className="form-group">
             <input
@@ -102,7 +114,6 @@ const Form = () => {
           </div>
         </div>
         {/* End .col */}
-
         <div className="col-md-6">
           <div className="form-group">
             <input
@@ -118,7 +129,6 @@ const Form = () => {
           </div>
         </div>
         {/* End .col */}
-
         <div className="col-md-6">
           <div className="form-group">
             <input
@@ -134,7 +144,6 @@ const Form = () => {
           </div>
         </div>
         {/* End .col */}
-
         <div className="col-sm-12">
           <div className="form-group mb0">
             <button type="submit" className="btn btn-lg btn-thm">
