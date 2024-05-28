@@ -28,28 +28,7 @@ const home = [
   }
 ];
 
-const listing = [
-  {
-    id: 1,
-    name: "For Sale🔥",
-    routerPath: "/listing-grid-v6"
-  },
-  {
-    id: 2,
-    name: "Negotiable🤔",
-    routerPath: "/listing-grid-v6"
-  },
-  {
-    id: 3,
-    name: "Inactive🔐",
-    routerPath: "/listing-grid-v6"
-  },
-  {
-    id: 4,
-    name: "Map📍",
-    routerPath: "/listing-map-v4"
-  },
-];
+
 
 const agency = [
   {
@@ -143,7 +122,6 @@ const MobileMenuContent = () => {
             src="/assets/images/header-logo2.png"
             alt="header-logo.png"
           />
-          <span className="brand-text">Dibs</span>
         </Link>
         {/* End .logo */}
 
