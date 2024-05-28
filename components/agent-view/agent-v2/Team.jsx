@@ -26,7 +26,7 @@ const Team = () => {
     item.city.toLowerCase().includes(city.toLowerCase());
 
   let content = agents
-    .slice(7, 16)
+    .slice(8, 17)
     .filter(nameHandler)
     .filter(categoryHandler)
     .filter(cityHandler)

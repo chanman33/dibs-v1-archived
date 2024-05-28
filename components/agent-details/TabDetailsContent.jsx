@@ -18,7 +18,7 @@ const TabDetailsContent = () => {
             aria-controls="description"
             aria-selected="true"
           >
-            Description
+            About
           </a>
         </li>
         {/* End Description tab */}
@@ -32,7 +32,7 @@ const TabDetailsContent = () => {
             aria-controls="listing"
             aria-selected="false"
           >
-            Listing
+            Listings
           </a>
         </li>
         {/* End Listing tab */}
@@ -109,12 +109,12 @@ const TabDetailsContent = () => {
           <div className="product_single_content">
             <div className="mbp_pagination_comments">
               <div className="total_review">
-                <h4>896 Reviews</h4>
+                <h4>34 Reviews</h4>
                 <ul className="review_star_list mb0 pl10">
                   <Ratings />
                 </ul>
                 <a className="tr_outoff pl10" href="#">
-                  ( 4.5 out of 5 )
+                  ( 4.8 out of 5 )
                 </a>
                 <a className="write_review float-end fn-xsd" href="#">
                   Write a Review
@@ -124,7 +124,7 @@ const TabDetailsContent = () => {
               <Comments />
               <div className="custom_hr"></div>
 
-              <div className="mbp_comment_form style2">
+              {/* <div className="mbp_comment_form style2">
                 <h4>Write a Review</h4>
                 <ul className="review_star">
                   <li className="list-inline-item">
@@ -139,7 +139,7 @@ const TabDetailsContent = () => {
                   </li>
                 </ul>
                 <ReviewBox />
-              </div>
+              </div> */}
             </div>
           </div>
         </div>

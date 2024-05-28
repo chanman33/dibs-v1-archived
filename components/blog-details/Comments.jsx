@@ -13,23 +13,21 @@ const Comments = () => {
         </>
       ),
       data: "",
-      text: `Beautiful home, very picturesque and close to everything in jtree! A
-      little warm for a hot weekend, but would love to come back during
-      the cooler seasons!`,
+      text: `Their marketing strategies were top-notch, and we received multiple 
+      offers within days of listing. Communication was always clear and timely.`,
     },
     {
       id: 2,
       img: "2",
-      name: "Ali Tufan",
+      name: "James Jones",
       ratings: (
         <>
           <Ratings />
         </>
       ),
       data: "",
-      text: `Beautiful home, very picturesque and close to everything in jtree! A
-      little warm for a hot weekend, but would love to come back during
-      the cooler seasons!`,
+      text: `the selling process incredibly smooth and stress-free. Their dedication
+       to getting the best possible price for our home was evident from day one.`,
     },
   ];
   return (

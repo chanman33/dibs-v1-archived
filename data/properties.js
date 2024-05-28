@@ -2,7 +2,7 @@ module.exports = [
   {
     id: 1,
     img: "/assets/images/property/fp1.jpg",
-    price: "13000",
+    price: "13,000",
     type: "Condo",
     title: "Luxury Family Home",
     location: `1421 San Pedro
@@ -48,7 +48,7 @@ St, Los Angeles, CA 900015`,
   {
     id: 2,
     img: "/assets/images/property/fp2.jpg",
-    price: "14000",
+    price: "14,000",
     type: "Bungalow",
     title: "Renovated Apartment",
     location: `1421 San Pedro
@@ -94,7 +94,7 @@ St, Los Angeles, CA 900015`,
   {
     id: 3,
     img: "/assets/images/property/fp3.jpg",
-    price: "13000",
+    price: "13,000",
     type: "Bungalow",
     title: "Single Family Home",
     location: `1421 San Pedro
@@ -140,7 +140,7 @@ St, Los Angeles, CA 900015`,
   {
     id: 4,
     img: "/assets/images/property/fp15.jpg",
-    price: "11000",
+    price: "11,000",
     type: "House",
     title: "Gorgeous Villa Bay View",
     location: `1421 San Pedro
@@ -186,7 +186,7 @@ St, Los Angeles, CA 900015`,
   {
     id: 5,
     img: "/assets/images/property/fp16.jpg",
-    price: "17000",
+    price: "17,000",
     type: "Land",
     title: "Renovated Apartment",
     location: `1421 San Pedro
@@ -231,7 +231,7 @@ St, Los Angeles, CA 900015`,
   {
     id: 6,
     img: "/assets/images/property/fp17.jpg",
-    price: "16000",
+    price: "16,000",
     type: "Single Family Home",
     title: "Gorgeous Villa Bay View",
     location: `1421 San Pedro
@@ -276,7 +276,7 @@ St, Los Angeles, CA 900015`,
   {
     id: 7,
     img: "/assets/images/property/fp18.jpg",
-    price: "15000",
+    price: "15,000",
     type: "Apartment",
     title: "Renovated Apartment",
     location: `1421 San Pedro
@@ -321,7 +321,7 @@ St, Los Angeles, CA 900015`,
   {
     id: 8,
     img: "/assets/images/property/fp19.jpg",
-    price: "12000",
+    price: "12,000",
     type: "Condo",
     title: "Gorgeous Villa Bay View",
     location: `1421 San Pedro

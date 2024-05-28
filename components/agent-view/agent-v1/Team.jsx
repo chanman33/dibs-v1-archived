@@ -69,12 +69,15 @@ const Team = () => {
                 </li>
                 <li>
                   <a href="#">Mobile: {item.mobile}</a>
-                </li>
-                <li>
-                  <a href="#">Fax: {item.fax}</a>
-                </li>
+                </li> 
                 <li>
                   <a href="#">Email: {item.email}</a>
+                </li>
+                <li>
+                  <a href="#">Years Experience: {item.years}</a>
+                </li>
+                <li>
+                  <a href="#">Rating: {item.rating}</a>
                 </li>
               </ul>
             </div>

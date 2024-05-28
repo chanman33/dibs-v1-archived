@@ -70,9 +70,6 @@ const AgentDetailsDynamic = ({params}) => {
                             <a href="#">Mobile: {agent?.mobile}</a>
                           </li>
                           <li>
-                            <a href="#">Fax: {agent?.fax}</a>
-                          </li>
-                          <li>
                             <a href="#">Email: {agent?.email}</a>
                           </li>
                         </ul>

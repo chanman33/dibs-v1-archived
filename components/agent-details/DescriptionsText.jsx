@@ -1,51 +1,32 @@
 const DescriptionsText = () => {
   return (
     <>
-      <h3 className="title mb-3">Elegantly appointed condominium</h3>
+      <h3 className="title mb-3">Committed to Exceptional Service and Results</h3>
       <p className="mb25">
-        Evans Tower very high demand corner junior one bedroom plus a large
-        balcony boasting full open NYC views. You need to see the views to
-        believe them. Mint condition with new hardwood floors. Lots of closets
-        plus washer and dryer.
+        I believe in building strong relationships with my clients through transparency,
+        communication, and integrity. From the initial consultation to the closing
+        of the sale, I provide personalized service tailored to your specific needs.
+        My proactive approach and attention to detail ensure that every aspect of the
+        selling process is handled professionally, giving you peace of mind and confidence
+        in achieving your real estate goals.
       </p>
+
+      <h3 className="title mb-3">Dedicated to Maximizing Your Property's Value</h3>
       <p className="mb25">
-        Fully furnished. Elegantly appointed condominium unit situated on
-        premier location. PS6. The wide entry hall leads to a large living room
-        with dining area. This expansive 2 bedroom and 2 renovated marble
-        bathroom apartment has great windows. Despite the interior views, the
-        apartments Southern and Eastern exposures allow for lovely natural light
-        to fill every room. The master suite is surrounded by handcrafted
-        milkwork and features incredible walk-in closet and storage space.
+        As a seller's agent, my primary focus is to ensure that your property is sold
+        for the best possible price. With a keen eye for detail and a strategic
+        approach to marketing, I work tirelessly to highlight your property's unique
+        features and attract qualified buyers. My goal is to provide you with a seamless,
+        stress-free selling experience that exceeds your expectations.
       </p>
-      <h3 className="title mb-3">The master suite is surrounded</h3>
+      <h3 className="title mb-3">Expert in Market Analysis and Pricing Strategies</h3>
       <p className="mb25">
-        Evans Tower very high demand corner junior one bedroom plus a large
-        balcony boasting full open NYC views. You need to see the views to
-        believe them. Mint condition with new hardwood floors. Lots of closets
-        plus washer and dryer.
-      </p>
-      <p className="mb25">
-        Fully furnished. Elegantly appointed condominium unit situated on
-        premier location. PS6. The wide entry hall leads to a large living room
-        with dining area. This expansive 2 bedroom and 2 renovated marble
-        bathroom apartment has great windows. Despite the interior views, the
-        apartments Southern and Eastern exposures allow for lovely natural.
-      </p>
-      <h3 className="title mb-3">Mint condition with new hardwood</h3>
-      <p className="mb25">
-        Evans Tower very high demand corner junior one bedroom plus a large
-        balcony boasting full open NYC views. You need to see the views to
-        believe them. Mint condition with new hardwood floors. Lots of closets
-        plus washer and dryer.
-      </p>
-      <p className="mt10 mb0">
-        Fully furnished. Elegantly appointed condominium unit situated on
-        premier location. PS6. The wide entry hall leads to a large living room
-        with dining area. This expansive 2 bedroom and 2 renovated marble
-        bathroom apartment has great windows. Despite the interior views, the
-        apartments Southern and Eastern exposures allow for lovely natural light
-        to fill every room. The master suite is surrounded by handcrafted
-        milkwork and features incredible walk-in closet and storage space.
+        With extensive experience and a deep understanding of the local real estate market,
+        I offer expert guidance on pricing your property competitively. I conduct thorough
+        market analyses to determine the optimal listing price, ensuring that your property
+        stands out in the market. My strategic pricing and negotiation skills help you
+        achieve the best possible outcome, whether you're selling a single-family home,
+        a condo, or an investment property.
       </p>
     </>
   );
