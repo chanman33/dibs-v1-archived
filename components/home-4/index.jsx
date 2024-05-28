@@ -69,7 +69,7 @@ const index = () => {
             <div className="col-lg-6 offset-lg-3">
               <div className="main-title text-center mb40">
                 <h2>Featured Properties</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <p>Find something near you! Hundreds of homes!</p>
               </div>
             </div>
           </div>
@@ -84,7 +84,7 @@ const index = () => {
       </section>
 
       {/* <!-- Property Cities --> */}
-      <section id="property-city" className="property-city pb30">
+      {/* <section id="property-city" className="property-city pb30">
         <div className="container">
           <div className="row">
             <div className="col-lg-6 offset-lg-3">
@@ -98,7 +98,7 @@ const index = () => {
             <FindProperties />
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* <!-- Our Blog --> */}
       <section className="our-blog bgc-f7 pb30">
@@ -107,7 +107,7 @@ const index = () => {
             <div className="col-lg-6 offset-lg-3">
               <div className="main-title text-center">
                 <h2>Articles & Tips</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <p>Learn how to save more on your next transaction.</p>
               </div>
             </div>
           </div>
