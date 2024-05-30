@@ -16,31 +16,36 @@ import Link from "next/link";
 import Image from "next/image";
 import { usePathname, useRouter } from "next/navigation";
 
-const home = [
+const buy = [
   {
-    id: 1,
-    name: "Home",
-    routerPath: "/",
-  },
-  { id: 2, name: "Buy", routerPath: "/" },
-  {
-    id: 3, name: "Sell", routerPath: "/",
+    id: 1, title: "Browse Listings", routerPath: "/listing-grid-v6"
   }
 ];
 
-
-
-const agency = [
+const sell = [
   {
     id: 1,
-    name: "Agents",
-    routerPath: "/agent-v1"
+    title: "Get Paid To Find Your Future Realtor",
+    routerPath: "/apply",
   },
   {
-    id: 2,
-    name: "Agencies",
-    routerPath: "/agency-v2"
+    id: 2, title: "Compare Agents", routerPath: "/agent-v1",
   },
+  {
+    id: 3, title: "Search Agents",
+    items: [
+      {
+        id: 1,
+        name: "Agents",
+        routerPath: "/agent-v1"
+      },
+      {
+        id: 2,
+        name: "Agencies",
+        routerPath: "/agency-v2"
+      },
+    ],
+  } 
 ];
 
 
@@ -100,7 +105,6 @@ const pages = [
   { id: 4, name: "LogIn", routerPath: "/login" },
   { id: 5, name: "Compare", routerPath: "/compare" },
   { id: 6, name: "Membership", routerPath: "/membership" },
-
   { id: 7, name: "Register", routerPath: "/register" },
   { id: 8, name: "Service", routerPath: "/service" },
   { id: 9, name: "404 Page", routerPath: "/404" },
@@ -136,83 +140,53 @@ const MobileMenuContent = () => {
       </div>
 
       {/* End logo */}
-      {/* <Sidebar> */}
       <div style={{ maxHeight: 'calc(100vh - 100px)', overflowY: 'auto' }}>
         <Menu>
           <SubMenu
-            label="Home"
-
+            label="Buy"
             className={
-              home.some((page) => page.routerPath?.split('/')[1] === pathname.split('/')[1])
+              buy.some((page) => page.routerPath?.split('/')[1] === pathname.split('/')[1])
                 ? "parent-menu-active"
                 : 'inactive-mobile-menu'
             }
           >
-            {home.map((val, i) => (
+            {buy.map((val, i) => (
               <MenuItem key={i} active={true}>
                 <div
-
                   onClick={() => router.push(val.routerPath)}
                   className={
                     val.routerPath?.split('/')[1] === pathname.split('/')[1] ? "ui-active" : 'inactive-mobile-menu'
                   }
                 >
-                  {val.name}
+                  {val.title}
                 </div>
               </MenuItem>
             ))}
           </SubMenu>
-          {/* End Home Home */}
+          {/* End Buy SubMenu */}
 
           <SubMenu
-            label="Listings"
-
+            label="Sell"
             className={
-              listing.some((page) => page.routerPath?.split('/')[1] === pathname.split('/')[1])
+              sell.some((page) => page.routerPath?.split('/')[1] === pathname.split('/')[1])
                 ? "parent-menu-active"
                 : 'inactive-mobile-menu'
             }
           >
-            {listing.map((val, i) => (
+            {sell.map((val, i) => (
               <MenuItem key={i} active={true}>
                 <div
-
                   onClick={() => router.push(val.routerPath)}
                   className={
                     val.routerPath?.split('/')[1] === pathname.split('/')[1] ? "ui-active" : 'inactive-mobile-menu'
                   }
                 >
-                  {val.name}
+                  {val.title}
                 </div>
               </MenuItem>
             ))}
           </SubMenu>
-          {/* End Listings Menu */}
-
-          <SubMenu
-            label="Agent Search"
-
-            className={
-              agency.some((page) => page.routerPath?.split('/')[1] === pathname.split('/')[1])
-                ? "parent-menu-active"
-                : 'inactive-mobile-menu'
-            }
-          >
-            {agency.map((val, i) => (
-              <MenuItem key={i} active={true}>
-                <div
-
-                  onClick={() => router.push(val.routerPath)}
-                  className={
-                    val.routerPath?.split('/')[1] === pathname.split('/')[1] ? "ui-active" : 'inactive-mobile-menu'
-                  }
-                >
-                  {val.name}
-                </div>
-              </MenuItem>
-            ))}
-          </SubMenu>
-          {/* End Agent Search Menu */}
+          {/* End Sell SubMenu */}
 
 
           <SubMenu
@@ -249,7 +223,6 @@ const MobileMenuContent = () => {
                       onClick={() => router.push(val.routerPath)}
                       className={
                         pathname.split('/')[1] === val.routerPath?.split('/')[1]
-                          // val.routerPath === pathname.split('/')[1]
                           ? "ui-active"
                           : 'inactive-mobile-menu'
                       }
@@ -261,7 +234,7 @@ const MobileMenuContent = () => {
               </SubMenu>
             ))}
           </SubMenu>
-          {/* End Pages Property */}
+          {/* End Property SubMenu */}
 
           <SubMenu
             label="Blog"
@@ -269,7 +242,6 @@ const MobileMenuContent = () => {
               blog.some(
                 (page) =>
                   page.routerPath?.split('/')[1] === pathname.split('/')[1]
-                // page.routerPath?.split('/')[1] + "/[id]" === pathname.split('/')[1]
               )
                 ? "parent-menu-active"
                 : 'inactive-mobile-menu'
@@ -281,7 +253,6 @@ const MobileMenuContent = () => {
                   onClick={() => router.push(val.routerPath)}
                   className={
                     pathname?.split('/')[1] === val.routerPath?.split('/')[1]
-                      // val.routerPath + "/[id]" === pathname.split('/')[1]
                       ? "ui-active"
                       : 'inactive-mobile-menu'
                   }
@@ -291,35 +262,11 @@ const MobileMenuContent = () => {
               </MenuItem>
             ))}
           </SubMenu>
-          {/* End pages Blog */}
-
-          {/* <SubMenu
-            label="Pages"
-            className={
-              pages.some((page) => page.routerPath?.split('/')[1] === pathname.split('/')[1])
-                ? "parent-menu-active"
-                : 'inactive-mobile-menu'
-            }
-          >
-            {pages.map((val, i) => (
-              <MenuItem key={i}>
-                <div
-                  onClick={() => router.push(val.routerPath)}
-                  className={
-                    pathname?.split('/')[1] === val.routerPath?.split('/')[1] ? "ui-active" : 'inactive-mobile-menu'
-                  }
-                >
-                  {val.name}
-                </div>
-              </MenuItem>
-            ))}
-          </SubMenu> */}
-          {/* End pages Pages */}
+          {/* End Blog SubMenu */}
 
           <MenuItem>
             <div
               onClick={() => router.push("/contact")}
-
               className={
                 pathname === "/contact" ? "ui-active" : 'inactive-mobile-menu'
               }
@@ -331,7 +278,6 @@ const MobileMenuContent = () => {
           <MenuItem>
             <div
               onClick={() => router.push("/login")}
-
               className={pathname === "/login" ? "ui-active" : 'inactive-mobile-menu'}
             >
               <span className="flaticon-user"></span> Login
@@ -341,7 +287,6 @@ const MobileMenuContent = () => {
           <MenuItem>
             <div
               onClick={() => router.push("/register")}
-
               className={
                 pathname === "/register" ? "ui-active" : 'inactive-mobile-menu'
               }
@@ -351,8 +296,7 @@ const MobileMenuContent = () => {
           </MenuItem>
         </Menu>
       </div>
-      {/* </Sidebar> */}
-
+      {/* End Sidebar */}
 
       <Link
         href="/create-listing"
@@ -360,9 +304,8 @@ const MobileMenuContent = () => {
         style={{ width: '90%', margin: '0px auto' }}
       >
         <span className="flaticon-plus"></span> Create Listing
-      </Link></>
-
-
+      </Link>
+    </>
   );
 };
 

@@ -6,24 +6,7 @@ import { usePathname } from "next/navigation";
 const HeaderMenuContent = ({ float = "" }) => {
   const pathname = usePathname();
 
-  const agent = [
-    {
-      id: 1, title: "Agent Search",
-      items: [
-        {
-          id: 1,
-          name: "Agents",
-          routerPath: "/agent-v1"
-        },
-        {
-          id: 2,
-          name: "Agencies",
-          routerPath: "/agency-v2"
-        },
-      ],
-    }
-  ];
-
+  
   const buy = [
     {
       id: 1, title: "Browse Listings", routerPath: "/listing-grid-v6"
@@ -54,19 +37,6 @@ const HeaderMenuContent = ({ float = "" }) => {
         },
       ],
     } 
-  ];
-
-  const listing = [
-    {
-      id: 1,
-      name: "For Sale🔥",
-      routerPath: "/listing-grid-v6"
-    },
-    {
-      id: 2,
-      name: "Map📍",
-      routerPath: "/listing-map-v4"
-    }
   ];
 
 
