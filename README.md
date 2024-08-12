@@ -1,6 +1,8 @@
-Dibs-v1-old (high fidelity wire frame - abandoned after pivot)
+Dibs-v1-archived (high fidelity wire frame - archived after pivot)
 
-We don't want to be a property listing marketplace that offered loans. We want to be a lending company with a marketplace of agents.
+We don't want to be a property listing marketplace that offered loans. We want to be a lending company with a marketplace of agents. 
+
+Archived, but keeping it around to reference any useful components or code.
 
 Deployed on Vercel: https://dibs-v1.vercel.app/
 
