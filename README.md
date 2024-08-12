@@ -1,3 +1,12 @@
+Dibs-v1-old (high fidelity wire frame - abandoned after pivot)
+
+We don't want to be a property listing marketplace that offered loans. We want to be a lending company with a marketplace of agents.
+
+Deployed on Vercel: https://dibs-v1.vercel.app/
+
+Based on the FindHouse - Real Estate Next.js template as the foundational codebase.
+
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
@@ -5,8 +14,6 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 First, run the development server:
 
 ```bash
-npm run dev
-# or
 yarn dev
 # or
 pnpm dev
